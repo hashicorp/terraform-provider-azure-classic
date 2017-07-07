@@ -2,6 +2,10 @@ Hi there,
 
 Thank you for opening an issue. Please note that we try to keep the Terraform issue tracker reserved for bug reports and feature requests. For general usage questions, please see: https://www.terraform.io/community.html.
 
+### Please Note
+
+This repository is for the older Azure Provider (also known as Service Management / "the old portal") which Microsoft recommend only for existing requirements. For new requirements, the Resource Manager / "new portal" is recommended - which is available in [the AzureRM Terraform Provider](https://github.com/terraform-provider/terraform-provider-azurerm).
+
 ### Terraform Version
 Run `terraform -v` to show the version. If you are not running the latest version of Terraform, please upgrade because your issue may have already been fixed.
 

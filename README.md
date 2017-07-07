@@ -7,6 +7,11 @@ Terraform Provider
 
 ![Terraform](https://rawgithub.com/hashicorp/terraform/master/website/source/assets/images/logo-hashicorp.svg)
 
+Please Note
+------------
+
+This repository is for the older Azure Provider (also known as Service Management / "the old portal") which Microsoft recommend only for existing requirements. For new requirements, the Resource Manager / "new portal" is recommended - which is available in [the AzureRM Terraform Provider](https://github.com/terraform-provider/terraform-provider-azurerm).
+
 Requirements
 ------------
 
@@ -20,13 +25,13 @@ Clone repository to: `$GOPATH/src/github.com/hashicorp/terraform-provider-$PROVI
 
 ```sh
 $ mkdir -p $GOPATH/src/github.com/hashicorp; cd $GOPATH/src/github.com/hashicorp
-$ git clone git@github.com:hashicorp/terraform-provider-$PROVIDER_NAME
+$ git clone git@github.com:hashicorp/terraform-provider-azure
 ```
 
 Enter the provider directory and build the provider
 
 ```sh
-$ cd $GOPATH/src/github.com/hashicorp/terraform-provider-$PROVIDER_NAME
+$ cd $GOPATH/src/github.com/hashicorp/terraform-provider-azure
 $ make build
 ```
 
@@ -42,9 +47,9 @@ If you wish to work on the provider, you'll first need [Go](http://www.golang.or
 To compile the provider, run `make build`. This will build the provider and put the provider binary in the `$GOPATH/bin` directory.
 
 ```sh
-$ make bin
+$ make build
 ...
-$ $GOPATH/bin/terraform-provider-$PROVIDER_NAME
+$ $GOPATH/bin/terraform-provider-azure
 ...
 ```
 
