@@ -1,4 +1,9 @@
 ## 0.1.1 (Unreleased)
+
+IMPROVEMENTS:
+
+* Fix incorrect error message when using a platform image without storage_service_name parameter [GH-31]
+
 ## 0.1.0 (June 20, 2017)
 
 NOTES:
