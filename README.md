@@ -1,16 +1,17 @@
 Terraform Provider
 ==================
 
+### :exclamation: Please Note :exclamation:
+
+This repository is for the older Azure Provider (also known as Service Management / "the old portal") which Microsoft recommend only for existing requirements. For new requirements, the Resource Manager / "new portal" is recommended - which is available in [the AzureRM Terraform Provider](https://github.com/terraform-providers/terraform-provider-azurerm).
+
+
 - Website: https://www.terraform.io
 - [![Gitter chat](https://badges.gitter.im/hashicorp-terraform/Lobby.png)](https://gitter.im/hashicorp-terraform/Lobby)
 - Mailing list: [Google Groups](http://groups.google.com/group/terraform-tool)
 
 <img src="https://cdn.rawgit.com/hashicorp/terraform-website/master/source/assets/images/logo-text.svg" width="600px">
 
-Please Note
-------------
-
-This repository is for the older Azure Provider (also known as Service Management / "the old portal") which Microsoft recommend only for existing requirements. For new requirements, the Resource Manager / "new portal" is recommended - which is available in [the AzureRM Terraform Provider](https://github.com/terraform-providers/terraform-provider-azurerm).
 
 Requirements
 ------------
