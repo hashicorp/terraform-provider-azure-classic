@@ -1,69 +1,9 @@
-Terraform Provider
-==================
+# Terraform Provider for Azure Classic
 
-### :exclamation: Please Note :exclamation:
+## Please Note
 
-This repository is for the older Azure Provider (also known as Service Management / "the old portal") which Microsoft recommend only for existing requirements. For new requirements, the Resource Manager / "new portal" is recommended - which is available in [the AzureRM Terraform Provider](https://github.com/terraform-providers/terraform-provider-azurerm).
+This repository is for the Terraform Provider for Azure Classic (also known as Service Management / "the old Portal").
 
+Today (December 19, 2017) [we’ve announced the deprecation and archival of the Azure Classic Provider](https://hashicorp.com/blog/deprecating-the-microsoft-azure-legacy-asm-terrafor). Matching Microsoft’s commitment to gradually remove access to Azure Classic (or Service Management) [which is outlined in this blog post](https://azure.microsoft.com/en-us/updates/azure-portal-updates-for-classic-portal-users/), we are closing all open PR's and Issues here. This repository will remain available here on GitHub, but in an archived state, and no longer receiving support or new releases.
 
-- Website: https://www.terraform.io
-- [![Gitter chat](https://badges.gitter.im/hashicorp-terraform/Lobby.png)](https://gitter.im/hashicorp-terraform/Lobby)
-- Mailing list: [Google Groups](http://groups.google.com/group/terraform-tool)
-
-<img src="https://cdn.rawgit.com/hashicorp/terraform-website/master/content/source/assets/images/logo-hashicorp.svg" width="600px">
-
-
-Requirements
-------------
-
--	[Terraform](https://www.terraform.io/downloads.html) 0.10.x
--	[Go](https://golang.org/doc/install) 1.8 (to build the provider plugin)
-
-Building The Provider
----------------------
-
-Clone repository to: `$GOPATH/src/github.com/terraform-providers/terraform-provider-azure`
-
-```sh
-$ mkdir -p $GOPATH/src/github.com/terraform-providers; cd $GOPATH/src/github.com/terraform-providers
-$ git clone git@github.com:terraform-providers/terraform-provider-azure
-```
-
-Enter the provider directory and build the provider
-
-```sh
-$ cd $GOPATH/src/github.com/terraform-providers/terraform-provider-azure
-$ make build
-```
-
-Using the provider
-----------------------
-## Fill in for each provider
-
-Developing the Provider
----------------------------
-
-If you wish to work on the provider, you'll first need [Go](http://www.golang.org) installed on your machine (version 1.8+ is *required*). You'll also need to correctly setup a [GOPATH](http://golang.org/doc/code.html#GOPATH), as well as adding `$GOPATH/bin` to your `$PATH`.
-
-To compile the provider, run `make build`. This will build the provider and put the provider binary in the `$GOPATH/bin` directory.
-
-```sh
-$ make build
-...
-$ $GOPATH/bin/terraform-provider-azure
-...
-```
-
-In order to test the provider, you can simply run `make test`.
-
-```sh
-$ make test
-```
-
-In order to run the full suite of Acceptance tests, run `make testacc`.
-
-*Note:* Acceptance tests create real resources, and often cost money to run.
-
-```sh
-$ make testacc
-```
+[The Azure (Resource Manager) Provider](https://github.com/terraform-providers/terraform-provider-azurerm) remains fully supported and is our recommended approach for managing Azure with Terraform. More information about this process is available in the blog post linked above.
